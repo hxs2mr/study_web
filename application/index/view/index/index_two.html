@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/home_one.css" />
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/one.css" />
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/animate.css" />
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/doctor_app.css" />
+    <script type="text/javascript" src="__CSS__/index/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+{include file="public/header" /}
+<div>
+<div id="doctor_one" class="doctor_one">
+
+    <div style="display: inline;float: left">
+        <img id="doctor_one_img"  src="__CSS__/index/image/doctor_one_img.jpg">
+    </div>
+    <div id="fenniao" style="display: inline;float:left;margin-top: 200px">
+        <h1 style="color: #ffffff"><b>蜂鸟医生</b></h1>
+        <p style="color: #ECF0F5">Feng niao Doctor</p>
+        <p style="color: #ECF0F5;width: 336px;font-size: 20px">用户端连接社区医生的两种形式，个性化医疗服务，记录当日体征数据等</p>
+
+        <div style="margin-top: 40px">
+        <button id="android" class="button" style=" font-family: PingFangSC-Regular;font-size: 20px;color:forestgreen;letter-spacing: 0">Android版</button>
+        <button id="ios" class="button" style=" font-family: PingFangSC-Regular;font-size: 20px;color:forestgreen;margin-left:40px;letter-spacing: 0">Ios版</button>
+        </div>
+    </div>
+</div>
+
+<div id="doctor_two" class="doctor_two">
+
+
+        <div >
+            <div style="display: inline;float: left;">
+            <p style="color: #3D4859;font-size: 26px"><b>线上线下随访</b></p>
+            <p style="color: #8492A8;font-size: 16px;width: 402px">医务人员和患者有效的链接在一起，打破时间和空间的束缚，沟通无障碍</p>
+            </div>
+            <div style="display: inline;float: left">
+            <img  id="doctor_two1" class="doctor_two1" src="__CSS__/index/image/doctor_img_two.jpg">
+            </div>
+        </div>
+
+
+        <div >
+            <div style="display: inline;float: left;">
+                <img  id="doctor_two2" class="doctor_two1" src="__CSS__/index/image/doctor_img_two2.jpg">
+            </div>
+
+            <div style="display: inline;float: left;margin-top: 150px;">
+            <p style="color: #3D4859;font-size: 26px"><b>智能移动查房</b></p>
+            <p style="color: #8492A8;font-size: 16px;width: 402px">医务人员和患者有效的链接在一起，打破时间和空间的束缚，沟通无障碍</p>
+            </div>
+
+        </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#doctor_one_img").height($(window).height()-60);
+        $("#doctor_one").height($(window).height()-60);
+        $("#doctor_two").height($(window).height());
+        $("#doctor_two").width($(window).width());
+
+        $("#doctor_one_img").addClass("animated bounceInDown");
+        $("#fenniao").addClass("animated ");
+        $("#fenniao2").addClass("animated bounceIn");
+        $("#fenniao3").addClass("animated bounceIn");
+
+        $("#doctor_two1").addClass("animated bounceInDown");
+        $("#doctor_two2").addClass("animated ");
+        setTimeout('android()',1000);//延迟执行
+    });
+
+    function android() {
+        $(document).ready(function () {
+            $("#android").addClass("animated flipInY");
+            $("#ios").addClass("animated flipInY");
+        });
+    }
+</script>
+</body>
+</html>

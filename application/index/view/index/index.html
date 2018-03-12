@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/home_one.css" />
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/one.css" />
+    <link rel="stylesheet"  type="text/css"  href="__CSS__/index/css/animate.css" />
+    <script type="text/javascript" src="__CSS__/index/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+{include file="public/header" /}
+<div>
+    <div id="home_one" class="home_one">
+        <span  id="one_content" class="one_title"> 便捷的医疗与健康管理服务</span>
+        <p id="one_content1" class="one_content">整合区域医疗资源，为您个人及家庭健康提供全面监护</p>
+        <img id="one_img" src="__CSS__/index/image/home_one_img.jpg" class="one_image">
+    </div>
+
+<div onscroll="two_start()" id="home_two" class="home_two">
+    <p class="tow_title" style="margin-top: 100px"><b style="font-size: 26px">米可家庭云病房<span  class="two_span">产品优势</span></b></p>
+    <div style="margin-top: 100px">
+        <img id="img1"  src="__CSS__/index/image/home_two_1.jpg" onmouseover="home_one_image1()"  style="margin-left: 150px" class="two_image_size" >
+        <img id="img2" src="__CSS__/index/image/home_two_2.jpg" onmouseover="home_one_image2()" style="margin-left: 173px" class="two_image_size">
+        <img id="img3" src="__CSS__/index/image/home_two_3.jpg" onmouseover="home_one_image3()" style="margin-left: 173px" class="two_image_size">
+        <img id="img4" src="__CSS__/index/image/home_two_4.jpg" onmouseover="home_one_image4()" style="margin-right: 150px;margin-left: 173px" class="two_image_size">
+    </div>
+    <div class="two_image_title"  onscroll="home_one_title1()">
+        <span  id="one_t1" style="margin-left: 310px"  onmouseover="home_one_title1()">提供数据支持</span>
+        <span  id="one_t2" style="margin-left: 225px" onmouseover="home_one_title2()">灵活的随访服务</span>
+        <span  id="one_t3" style="margin-left: 225px" onmouseover="home_one_title3()">高效的管理患者</span>
+        <span  id="one_t4" style="margin-right: 310px;margin-left: 225px" onmouseover="home_one_title4()" >及时的医患链接</span>
+    </div>
+
+    <!--<div class="two_image_content">
+        <span  class="two_image_content_span" style="margin-left: 310px">自动获取患者测量的体格，及时了解病情变化，为康复管理提供数据支持</span>
+        <span class="two_image_content_span" style="margin-left: 225px">设定个性化随访方案、随访任务，实现灵活高效的随访服务</span>
+        <span  class="two_image_content_span" style="margin-left: 225px">完善的电子健康档案、康复管理面板帮助医生高效的管理患者</span>
+        <span class="two_image_content_span" style="margin-right: 310px;margin-left: 225px" >灵活的居民签约方式，快速创建健康档案</span>
+    </div>-->
+    <p class="tow_title" style="padding-top: 80px" >
+        <b style="font-size: 26px">米可云病房系统<span   class="two_span">产品一览</span></b></p>
+
+    <div  style="width:100%;margin-top: 80px;height: auto">
+        <div style="width:25%;text-align:center;display:inline;float: left">
+            <img id="im1" src="__CSS__/index/image/home_two_11.jpg"  style="margin-left: 20%;" class="two_image_size">
+            <img src="__CSS__/index/image/home_two_xia1.jpg" class="home_two_ixa" style="margin-right:  20%;margin-left: 40%;">
+            <p class="home_two_p" style="width: 30%;margin-left: 50%">健康管理系统后台提供各种数据接口为分级诊疗，双向转诊提供可能</p>
+        </div>
+        <div  style="width:25%;text-align:center;display:inline;float: left">
+            <img id="im2" src="__CSS__/index/image/home_two_22.jpg" style="margin-left:  28%;" class="two_image_size">
+            <img src="__CSS__/index/image/home_two_xia2.jpg" class="home_two_ixa" style="margin-right:  20%;margin-left: 45%;">
+            <p class="home_two_p" style="width: 30%;margin-left: 50%">社区医生管理“居民家庭健康”和“住院患者”而量身打造的移动端管理工具</p>
+        </div>
+        <div  style="width:25%;text-align:center;display:inline;float: left">
+            <img id="im3" src="__CSS__/index/image/home_two_33.jpg" style="margin-left:  18%;" class="two_image_size">
+            <img src="__CSS__/index/image/home_two_xia1.jpg" class="home_two_ixa " style="margin-right:  20%;margin-left: 30%;">
+            <p class="home_two_p" style="width: 30%;margin-left: 42%">云计算、大数据等技术，整合区域医疗资源为诊断和治疗提供数据决策支持</p>
+        </div>
+        <div  style="width:25%;text-align:center;display:inline;float: left">
+            <img id="im4" src="__CSS__/index/image/home_two_44.jpg" style="margin-right:  40%;margin-left:  30%;" class="two_image_size">
+            <img src="__CSS__/index/image/home_two_xia3.jpg" class="home_two_ixa" style="margin-right:  25%;margin-left: 20%;">
+            <p class="home_two_p" style=" width: 30%;margin-left:33%;padding-right: 25%">用户端连接社区医生的两种形式，个性化医疗服务，记录当日体征数据等</p>
+        </div>
+    </div>
+</div>
+
+<div  id="home_three" class="home_three">
+    <p class="tow_title" style="padding-top: 80px"><b ><span class="three_span1">家庭健康管理平台</span><span  class="three_span">产品简介</span></b></p>
+    <div style="margin: 0;padding: 0">
+        <div style="display: inline;float: left;padding-left: 15%">
+            <img src="__CSS__/index/image/home_three_image.png" class="three_image_size">
+        </div>
+
+        <div style="display: inline;float: left;padding-top: 20%;padding-left: 110px">
+            <h2 style="font-size: 28px;color: #ECF0F5;text-align: left"> 家庭健康管理平台</h2>
+            <p style="font-size: 18px;color: #ffffff">系统提供各种数据接口，为分级诊疗，双向转诊提供可能</p>
+        </div>
+    </div>
+
+    <div style="position: relative;margin-top: 40px;float:left;width:100%;height: 120px;background-color: #3D4859">
+
+        <div style="padding-top: 20px">
+            <div style="display: inline;margin-left: 20%"><a href="#" style="color: #FFFFFF;font-size: 15px;text-decoration: none">法律声明</a></div>
+            <div style="display: inline;margin-left: 10%"> <a href="#" style="color: #FFFFFF;font-size: 15px;text-decoration: none">版权信息</a></div>
+            <div style="display: inline;margin-left: 10%;margin-right: 20%"> <a href="#" style="color: #FFFFFF;font-size: 15px;text-decoration: none">友情链接</a></div>
+        </div>
+
+        <div>
+            <p style="font-size: 12px;color: #8492A8">本站文章版权贵原作者所有，仅供参考，请勿抄袭和做其他用途</p>
+            <span  style="font-size: 12px;color: #8492A8;padding-top: 0;margin-top: 0" >贵州米可医疗科技有限公司 黔ICP备12043664号-5　黔ICP证150329号 黔网文【2017】2410-473</span>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+
+<script type="text/javascript">/*使用jquery 使div为屏幕高度*/
+    $(document).ready(function(){
+        $("#home_one").height($(window).height()-166);
+        $("#home_one").width($(window).width());
+
+        $("#home_two").height($(window).height());
+        $("#home_two").width($(window).width());
+
+        $("#home_three").height($(window).height());
+        $("#home_three").width($(window).width());
+
+        $("#one_content").fadeIn();
+        $("#one_content1").fadeIn("slow");
+        $("#one_img").fadeIn(3000);
+
+        var im1_x = $('#im1').offset().top-$(window).height();/*获取相对位置*/
+        var im1_y = $('#im1').offset().left;
+
+        var im2_x = $('#im2').offset().top-$(window).height();
+        var im2_y = $('#im2').offset().left;
+
+        //alert(im1_x+'.'+im1_y+'.'+im2_x+'.'+im2_y);
+
+       /* var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(100,100);
+        ctx.stroke();  //画线
+*/
+    });
+
+
+    function home_one_title1() {
+        $(document).ready(function () {
+            $("#one_t1").toggleClass("animated  tada");
+        });
+
+    }
+
+    function home_one_title2() {
+    $(document).ready(function () {
+        $("#one_t2").toggleClass("animated  tada");
+    });
+
+    }
+    function home_one_title3() {
+    $(document).ready(function () {
+        $("#one_t3").toggleClass("animated  tada");
+    });
+
+    }
+    function home_one_title4() {
+    $(document).ready(function () {
+        $("#one_t4").toggleClass("animated  tada");
+    });
+
+    }
+
+
+
+
+    function  home_one_image1() {
+
+        $(document).ready(function () {
+                $("#img1").toggleClass("animated  flipInY");
+
+        });
+
+    }
+function  home_one_image2() {
+
+    $(document).ready(function () {
+        $("#img2").toggleClass("animated  flipInY");
+
+    });
+
+}
+function  home_one_image3() {
+
+    $(document).ready(function () {
+        $("#img3").toggleClass("animated  flipInY");
+
+    });
+
+}
+function  home_one_image4() {
+
+    $(document).ready(function () {
+        $("#img4").toggleClass("animated  flipInY");
+
+    });
+
+}
+
+
+    function two_start() {
+        $(document).ready(function(){
+            $("#one_content").fadeIn();
+            $("#one_content1").fadeIn("slow");
+            $("#one_img").fadeIn(3000);
+        });
+    }
+</script>
+</html>
